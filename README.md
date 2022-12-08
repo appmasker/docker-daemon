@@ -1,3 +1,8 @@
+# Build & Push this image to dockerhub
+```bash
+docker buildx build --platform linux/amd64,linux/arm64 --push -t appmasker/docker-daemon:latest .
+```
+
 # Fly Docker Daemon
 
 This is a Docker Daemon that runs on Fly.io and can be used to offload  builds and other tasks to a Fly app running in a city near you.
